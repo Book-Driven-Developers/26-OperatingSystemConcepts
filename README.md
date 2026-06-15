@@ -5,5 +5,6 @@
 
 # 교재
 https://www.yes24.com/product/goods/138257629
+https://operating-system-in-1000-lines.vercel.app/ko/
 
 # 스터디 산출물
