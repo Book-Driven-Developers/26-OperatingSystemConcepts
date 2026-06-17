@@ -35,7 +35,7 @@
     - Chapter 10(427p~482p)
     - 1000Line OS(12~13)
 - 7주차
-    - Chpater 6(283p~314p) + Chapter 7(334p~341p)
+    - Chpater 6(283p~314p), Chapter 7(334p~341p)
     - 1000Line OS(14)
 - 8주차
     - Chapter 11(491p~529p)
