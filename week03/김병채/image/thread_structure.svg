@@ -1,0 +1,84 @@
+<svg viewBox="0 0 960 560" xmlns="http://www.w3.org/2000/svg" font-family="'Apple SD Gothic Neo','Malgun Gothic','Noto Sans KR',sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#e07a3f"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="960" height="560" fill="#faf7f2"/>
+
+  <!-- ===================== 왼쪽: 단일스레드 프로세스 ===================== -->
+  <text x="230" y="42" text-anchor="middle" font-size="20" font-weight="700" fill="#3d3a34">단일스레드 프로세스</text>
+
+  <rect x="70" y="60" width="320" height="420" rx="12" fill="#ffffff" stroke="#c9c2b6" stroke-width="2"/>
+
+  <!-- 공유 자원 -->
+  <rect x="95" y="85" width="270" height="70" rx="8" fill="#eef3ea" stroke="#8faf7f" stroke-width="1.5"/>
+  <text x="230" y="113" text-anchor="middle" font-size="14" font-weight="600" fill="#4a5d3f">코드 · 데이터 · 파일</text>
+  <text x="230" y="136" text-anchor="middle" font-size="11.5" fill="#6b7a60">(프로세스 자원)</text>
+
+  <!-- 스레드 고유 영역 -->
+  <rect x="95" y="175" width="270" height="230" rx="8" fill="#fdf1e7" stroke="#e0a97a" stroke-width="1.5"/>
+  <rect x="120" y="195" width="220" height="42" rx="6" fill="#ffffff" stroke="#d8b394"/>
+  <text x="230" y="221" text-anchor="middle" font-size="13.5" fill="#7a5a3d">레지스터 집합</text>
+  <rect x="120" y="249" width="220" height="42" rx="6" fill="#ffffff" stroke="#d8b394"/>
+  <text x="230" y="275" text-anchor="middle" font-size="13.5" fill="#7a5a3d">프로그램 카운터 (PC)</text>
+  <rect x="120" y="303" width="220" height="42" rx="6" fill="#ffffff" stroke="#d8b394"/>
+  <text x="230" y="329" text-anchor="middle" font-size="13.5" fill="#7a5a3d">스택</text>
+
+  <!-- 실행 흐름(스레드) 표시 -->
+  <path d="M 230 365 q -14 12 0 24 q 14 12 0 24 q -10 9 0 18" fill="none" stroke="#e07a3f" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="230" y="460" text-anchor="middle" font-size="12.5" fill="#b06030">스레드 (실행 흐름 1개)</text>
+
+  <!-- ===================== 오른쪽: 멀티스레드 프로세스 ===================== -->
+  <text x="710" y="42" text-anchor="middle" font-size="20" font-weight="700" fill="#3d3a34">멀티스레드 프로세스</text>
+
+  <rect x="500" y="60" width="420" height="420" rx="12" fill="#ffffff" stroke="#c9c2b6" stroke-width="2"/>
+
+  <!-- 공유 자원 -->
+  <rect x="525" y="85" width="370" height="70" rx="8" fill="#eef3ea" stroke="#8faf7f" stroke-width="1.5"/>
+  <text x="710" y="113" text-anchor="middle" font-size="14" font-weight="600" fill="#4a5d3f">코드 · 데이터 · 파일</text>
+  <text x="710" y="136" text-anchor="middle" font-size="11.5" fill="#6b7a60">(모든 스레드가 공유)</text>
+
+  <!-- 스레드 3개 컬럼 -->
+  <!-- Thread 1 -->
+  <rect x="525" y="175" width="112" height="230" rx="8" fill="#fdf1e7" stroke="#e0a97a" stroke-width="1.5"/>
+  <rect x="537" y="195" width="88" height="42" rx="6" fill="#ffffff" stroke="#d8b394"/>
+  <text x="581" y="216" text-anchor="middle" font-size="11.5" fill="#7a5a3d">레지스터</text>
+  <text x="581" y="230" text-anchor="middle" font-size="11.5" fill="#7a5a3d">집합</text>
+  <rect x="537" y="249" width="88" height="42" rx="6" fill="#ffffff" stroke="#d8b394"/>
+  <text x="581" y="275" text-anchor="middle" font-size="11.5" fill="#7a5a3d">PC</text>
+  <rect x="537" y="303" width="88" height="42" rx="6" fill="#ffffff" stroke="#d8b394"/>
+  <text x="581" y="329" text-anchor="middle" font-size="11.5" fill="#7a5a3d">스택</text>
+  <path d="M 581 360 q -11 10 0 20 q 11 10 0 20 q -8 8 0 15" fill="none" stroke="#e07a3f" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Thread 2 -->
+  <rect x="654" y="175" width="112" height="230" rx="8" fill="#fdf1e7" stroke="#e0a97a" stroke-width="1.5"/>
+  <rect x="666" y="195" width="88" height="42" rx="6" fill="#ffffff" stroke="#d8b394"/>
+  <text x="710" y="216" text-anchor="middle" font-size="11.5" fill="#7a5a3d">레지스터</text>
+  <text x="710" y="230" text-anchor="middle" font-size="11.5" fill="#7a5a3d">집합</text>
+  <rect x="666" y="249" width="88" height="42" rx="6" fill="#ffffff" stroke="#d8b394"/>
+  <text x="710" y="275" text-anchor="middle" font-size="11.5" fill="#7a5a3d">PC</text>
+  <rect x="666" y="303" width="88" height="42" rx="6" fill="#ffffff" stroke="#d8b394"/>
+  <text x="710" y="329" text-anchor="middle" font-size="11.5" fill="#7a5a3d">스택</text>
+  <path d="M 710 360 q -11 10 0 20 q 11 10 0 20 q -8 8 0 15" fill="none" stroke="#e07a3f" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Thread 3 -->
+  <rect x="783" y="175" width="112" height="230" rx="8" fill="#fdf1e7" stroke="#e0a97a" stroke-width="1.5"/>
+  <rect x="795" y="195" width="88" height="42" rx="6" fill="#ffffff" stroke="#d8b394"/>
+  <text x="839" y="216" text-anchor="middle" font-size="11.5" fill="#7a5a3d">레지스터</text>
+  <text x="839" y="230" text-anchor="middle" font-size="11.5" fill="#7a5a3d">집합</text>
+  <rect x="795" y="249" width="88" height="42" rx="6" fill="#ffffff" stroke="#d8b394"/>
+  <text x="839" y="275" text-anchor="middle" font-size="11.5" fill="#7a5a3d">PC</text>
+  <rect x="795" y="303" width="88" height="42" rx="6" fill="#ffffff" stroke="#d8b394"/>
+  <text x="839" y="329" text-anchor="middle" font-size="11.5" fill="#7a5a3d">스택</text>
+  <path d="M 839 360 q -11 10 0 20 q 11 10 0 20 q -8 8 0 15" fill="none" stroke="#e07a3f" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <text x="710" y="460" text-anchor="middle" font-size="12.5" fill="#b06030">스레드 1 · 스레드 2 · 스레드 3 (실행 흐름 3개)</text>
+
+  <!-- ===================== 하단 범례 ===================== -->
+  <rect x="250" y="500" width="16" height="16" rx="4" fill="#eef3ea" stroke="#8faf7f" stroke-width="1.5"/>
+  <text x="274" y="513" font-size="13" fill="#4a5d3f">스레드 간 공유 (코드 · 데이터 · 열린 파일)</text>
+  <rect x="560" y="500" width="16" height="16" rx="4" fill="#fdf1e7" stroke="#e0a97a" stroke-width="1.5"/>
+  <text x="584" y="513" font-size="13" fill="#7a5a3d">스레드별 고유 (레지스터 · PC · 스택)</text>
+</svg>
