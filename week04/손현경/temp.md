@@ -1,0 +1,1 @@
+https://metal-freedom-f60.notion.site/5-CPU-3a3bb8c35914805fa553fef337c00fe6?source=copy_link
